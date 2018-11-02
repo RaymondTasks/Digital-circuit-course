@@ -1,0 +1,8 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+D:/Codes/Digital-circuit-course/lab4_3_2/lab4_3_2.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+D:/Codes/Digital-circuit-course/lab4_3_2/lab4_3_2.srcs/sim_1/new/ripple_carry_adder_tb.v,1541144320,verilog,,,,ripple_carry_adder_tb,,,,,,,,
+D:/Codes/Digital-circuit-course/lab4_3_2/lab4_3_2.srcs/sim_1/new/testbench.v,1541147409,verilog,,,,testbench,,,,,,,,
+D:/Codes/Digital-circuit-course/lab4_3_2/lab4_3_2.srcs/sources_1/imports/new/Adder_4bit.v,1541143175,verilog,,D:/Codes/Digital-circuit-course/lab4_3_2/lab4_3_2.srcs/sim_1/new/ripple_carry_adder_tb.v,,fulladder_dataflow;ripple_carry_adder,,,,,,,,

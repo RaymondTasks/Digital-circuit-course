@@ -11,7 +11,7 @@ module Comparator(
 	reg [2:0] ROM [15:0];
 
 	initial begin
-		$readmemb ("C:\\Users\\rayomnd\\Desktop\\ROM.txt",ROM);
+		$readmemb ("ROM.txt",ROM);
 	end
 	
 	assign {lt,gt,eq} = ROM[{a[1:0],b[1:0]}];
