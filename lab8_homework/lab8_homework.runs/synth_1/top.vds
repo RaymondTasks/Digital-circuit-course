@@ -1,0 +1,375 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Nov 23 12:55:10 2018
+# Process ID: 14536
+# Current directory: D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.runs/synth_1/top.vds
+# Journal file: D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10976 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 361.906 ; gain = 98.754
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/sources_1/new/top.v:103]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.runs/synth_1/.Xil/Vivado-14536-Monsoon-PC/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.runs/synth_1/.Xil/Vivado-14536-Monsoon-PC/realtime/clk_wiz_0_stub.v:5]
+WARNING: [Synth 8-350] instance 'ip1' of module 'clk_wiz_0' requires 4 connections, but only 3 given [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/sources_1/new/top.v:111]
+INFO: [Synth 8-6157] synthesizing module 'Clk_5MHz_to_1kHz' [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/sources_1/new/top.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Clk_5MHz_to_1kHz' (2#1) [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/sources_1/new/top.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Clk_5MHz_to_1Hz' [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/sources_1/new/top.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'Clk_5MHz_to_1Hz' (3#1) [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/sources_1/new/top.v:75]
+INFO: [Synth 8-6157] synthesizing module 'c_counter_binary_0' [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.runs/synth_1/.Xil/Vivado-14536-Monsoon-PC/realtime/c_counter_binary_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c_counter_binary_0' (4#1) [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.runs/synth_1/.Xil/Vivado-14536-Monsoon-PC/realtime/c_counter_binary_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'counter1' of module 'c_counter_binary_0' requires 5 connections, but only 4 given [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/sources_1/new/top.v:117]
+INFO: [Synth 8-6157] synthesizing module 'show_bcd' [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/sources_1/new/top.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'show_bcd' (5#1) [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/sources_1/new/top.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'top' (6#1) [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/sources_1/new/top.v:103]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 416.711 ; gain = 153.559
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 416.711 ; gain = 153.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 416.711 ; gain = 153.559
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'ip1'
+Finished Parsing XDC File [d:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'ip1'
+Parsing XDC File [d:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0/c_counter_binary_0_in_context.xdc] for cell 'counter0'
+Finished Parsing XDC File [d:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0/c_counter_binary_0_in_context.xdc] for cell 'counter0'
+Parsing XDC File [d:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0/c_counter_binary_0_in_context.xdc] for cell 'counter1'
+Finished Parsing XDC File [d:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0/c_counter_binary_0_in_context.xdc] for cell 'counter1'
+Parsing XDC File [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/constrs_1/imports/数字电路实验/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'swt[1]'. [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/constrs_1/imports/数字电路实验/Nexys4DDR_Master.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'swt[2]'. [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/constrs_1/imports/数字电路实验/Nexys4DDR_Master.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'swt[3]'. [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/constrs_1/imports/数字电路实验/Nexys4DDR_Master.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'swt[4]'. [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/constrs_1/imports/数字电路实验/Nexys4DDR_Master.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'swt[5]'. [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/constrs_1/imports/数字电路实验/Nexys4DDR_Master.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'swt[6]'. [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/constrs_1/imports/数字电路实验/Nexys4DDR_Master.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'swt[7]'. [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/constrs_1/imports/数字电路实验/Nexys4DDR_Master.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'swt[8]'. [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/constrs_1/imports/数字电路实验/Nexys4DDR_Master.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'swt[9]'. [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/constrs_1/imports/数字电路实验/Nexys4DDR_Master.xdc:22]
+WARNING: [Vivado 12-584] No ports matched 'swt[10]'. [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/constrs_1/imports/数字电路实验/Nexys4DDR_Master.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'swt[11]'. [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/constrs_1/imports/数字电路实验/Nexys4DDR_Master.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'swt[12]'. [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/constrs_1/imports/数字电路实验/Nexys4DDR_Master.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'swt[13]'. [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/constrs_1/imports/数字电路实验/Nexys4DDR_Master.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'swt[14]'. [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/constrs_1/imports/数字电路实验/Nexys4DDR_Master.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'swt[15]'. [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/constrs_1/imports/数字电路实验/Nexys4DDR_Master.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/constrs_1/imports/数字电路实验/Nexys4DDR_Master.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/constrs_1/imports/数字电路实验/Nexys4DDR_Master.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/constrs_1/imports/数字电路实验/Nexys4DDR_Master.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/constrs_1/imports/数字电路实验/Nexys4DDR_Master.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/constrs_1/imports/数字电路实验/Nexys4DDR_Master.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/constrs_1/imports/数字电路实验/Nexys4DDR_Master.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/constrs_1/imports/数字电路实验/Nexys4DDR_Master.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/constrs_1/imports/数字电路实验/Nexys4DDR_Master.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/constrs_1/imports/数字电路实验/Nexys4DDR_Master.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/constrs_1/imports/数字电路实验/Nexys4DDR_Master.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/constrs_1/imports/数字电路实验/Nexys4DDR_Master.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/constrs_1/imports/数字电路实验/Nexys4DDR_Master.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/constrs_1/imports/数字电路实验/Nexys4DDR_Master.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/constrs_1/imports/数字电路实验/Nexys4DDR_Master.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/constrs_1/imports/数字电路实验/Nexys4DDR_Master.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/constrs_1/imports/数字电路实验/Nexys4DDR_Master.xdc:48]
+Finished Parsing XDC File [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/constrs_1/imports/数字电路实验/Nexys4DDR_Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/constrs_1/imports/数字电路实验/Nexys4DDR_Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/constrs_1/imports/数字电路实验/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 750.766 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 750.766 ; gain = 487.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 750.766 ; gain = 487.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  d:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  d:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for ip1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for counter0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for counter1. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 750.766 ; gain = 487.613
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "clk_1kHz" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_1Hz" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 750.766 ; gain = 487.613
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     30 Bit       Adders := 2     
++---Registers : 
+	               30 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     30 Bit        Muxes := 2     
+	  22 Input      7 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Clk_5MHz_to_1kHz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     30 Bit       Adders := 1     
++---Registers : 
+	               30 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     30 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Clk_5MHz_to_1Hz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     30 Bit       Adders := 1     
++---Registers : 
+	               30 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     30 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module show_bcd 
+Detailed RTL Component Info : 
++---Muxes : 
+	  22 Input      7 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "ip2/clk_1kHz" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "ip3/clk_1Hz" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+WARNING: [Synth 8-3917] design top has port AN[7] driven by constant 1
+WARNING: [Synth 8-3917] design top has port AN[6] driven by constant 1
+WARNING: [Synth 8-3917] design top has port AN[5] driven by constant 1
+WARNING: [Synth 8-3917] design top has port AN[4] driven by constant 1
+WARNING: [Synth 8-3917] design top has port AN[3] driven by constant 1
+WARNING: [Synth 8-3917] design top has port AN[2] driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 750.766 ; gain = 487.613
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'ip1/clk_out1' to pin 'ip1/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 756.512 ; gain = 493.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 777.953 ; gain = 514.801
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 777.953 ; gain = 514.801
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module ip1 has unconnected pin reset
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 777.953 ; gain = 514.801
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 777.953 ; gain = 514.801
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 777.953 ; gain = 514.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 777.953 ; gain = 514.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 777.953 ; gain = 514.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 777.953 ; gain = 514.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------+----------+
+|      |BlackBox name      |Instances |
++------+-------------------+----------+
+|1     |clk_wiz_0          |         1|
+|2     |c_counter_binary_0 |         2|
++------+-------------------+----------+
+
+Report Cell Usage: 
++------+----------------------+------+
+|      |Cell                  |Count |
++------+----------------------+------+
+|1     |c_counter_binary_0    |     1|
+|2     |c_counter_binary_0__1 |     1|
+|3     |clk_wiz_0             |     1|
+|4     |CARRY4                |    16|
+|5     |LUT1                  |     3|
+|6     |LUT3                  |     2|
+|7     |LUT4                  |    73|
+|8     |LUT5                  |     4|
+|9     |LUT6                  |    12|
+|10    |FDCE                  |    61|
+|11    |FDPE                  |     1|
+|12    |IBUF                  |     1|
+|13    |OBUF                  |    15|
++------+----------------------+------+
+
+Report Instance Areas: 
++------+---------+-----------------+------+
+|      |Instance |Module           |Cells |
++------+---------+-----------------+------+
+|1     |top      |                 |   200|
+|2     |  ip2    |Clk_5MHz_to_1kHz |    86|
+|3     |  ip3    |Clk_5MHz_to_1Hz  |    80|
++------+---------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 777.953 ; gain = 514.801
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 777.953 ; gain = 180.746
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 777.953 ; gain = 514.801
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 40 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 777.953 ; gain = 526.273
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/Codes/Digital-circuit-course/lab8_homework/lab8_homework.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 777.953 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 23 12:55:45 2018...
