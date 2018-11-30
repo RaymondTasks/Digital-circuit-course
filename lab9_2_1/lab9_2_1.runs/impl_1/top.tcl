@@ -60,15 +60,11 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param synth.incrementalSynthesisCache C:/Users/rayomnd/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-5024-Monsoon-PC/incrSyn
   create_project -in_memory -part xc7a100tcsg324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
@@ -78,7 +74,7 @@ set rc [catch {
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
   add_files -quiet D:/Codes/Digital-circuit-course/lab9_2_1/lab9_2_1.runs/synth_1/top.dcp
-  read_ip -quiet d:/Codes/Digital-circuit-course/lab9_2_1/lab9_2_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+  read_ip -quiet D:/Codes/Digital-circuit-course/lab9_2_1/lab9_2_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
   read_xdc D:/Codes/Digital-circuit-course/lab9_2_1/lab9_2_1.srcs/constrs_1/imports/数字电路实验/Nexys4DDR_Master.xdc
   link_design -top top -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
@@ -152,25 +148,6 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
-  unset ACTIVE_STEP 
-}
-
-start_step write_bitstream
-set ACTIVE_STEP write_bitstream
-set rc [catch {
-  create_msg_db write_bitstream.pb
-  set_property XPM_LIBRARIES XPM_CDC [current_project]
-  catch { write_mem_info -force top.mmi }
-  write_bitstream -force top.bit 
-  catch {write_debug_probes -quiet -force top}
-  catch {file copy -force top.ltx debug_nets.ltx}
-  close_msg_db -file write_bitstream.pb
-} RESULT]
-if {$rc} {
-  step_failed write_bitstream
-  return -code error $RESULT
-} else {
-  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 
