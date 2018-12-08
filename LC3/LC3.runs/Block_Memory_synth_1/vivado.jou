@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Dec  8 16:24:24 2018
+# Process ID: 9908
+# Current directory: D:/Codes/Digital-circuit-course/LC3/LC3.runs/Block_Memory_synth_1
+# Command line: vivado.exe -log Block_Memory.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Block_Memory.tcl
+# Log file: D:/Codes/Digital-circuit-course/LC3/LC3.runs/Block_Memory_synth_1/Block_Memory.vds
+# Journal file: D:/Codes/Digital-circuit-course/LC3/LC3.runs/Block_Memory_synth_1\vivado.jou
+#-----------------------------------------------------------
+source Block_Memory.tcl -notrace
