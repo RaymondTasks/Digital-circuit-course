@@ -50,16 +50,22 @@ endmodule
 module ID_EX(
 	input clk,
 	input rst,
-
 	input [15:0] PC_in,
 
+	//用于EX级
     input [15:0] SR1_in,
     input [15:0] SR2_in,
     input [15:0] imm_in,
-    input [2:0] DR_addr_in,
     input [2:0] nzp_in,
     input left_or_right_in,
     input logical_or_arithmetical_in,
+    input ALU_A_Sel_in,
+    input ALU_B_sel_in,
+    input ALU_S_sel_in,
+
+
+    input [2:0] DR_addr_in,
+
 
     input BR_in,
     input JMP_in,
@@ -69,9 +75,7 @@ module ID_EX(
     input STR_in,
     input TRAP_in,
 
-    input ALU_A_Sel_in,
-    input ALU_B_sel_in,
-    input ALU_S_sel_in,
+
     input MEM_read_in,
     input MEM_write_in,
     input WB_enable_in,

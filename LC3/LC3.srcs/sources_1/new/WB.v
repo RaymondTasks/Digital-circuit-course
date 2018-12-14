@@ -20,10 +20,6 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module WB(
-	input WB_enable,
-	input [2:0] DR_addr,
-	input [15:0] DR
-    );
+module WB;
 
 endmodule

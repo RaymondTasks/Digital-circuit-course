@@ -1,0 +1,92 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Fri Dec 14 18:41:17 2018
+| Host         : Monsoon-PC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    25 |
+| Unused register locations in slices containing registers |   122 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |           18 |
+|      4 |            2 |
+|      6 |            1 |
+|    16+ |            4 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              12 |            3 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             188 |           24 |
+| Yes          | No                    | No                     |              36 |           18 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              66 |           10 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------+---------------+---------------------+------------------+----------------+
+|     Clock Signal    | Enable Signal |   Set/Reset Signal  | Slice Load Count | Bel Load Count |
++---------------------+---------------+---------------------+------------------+----------------+
+| ~ACL_SCLK_OBUF_BUFG | ACL_CSN3_out  | ACL_CSN1_out        |                1 |              2 |
+| ~ACL_SCLK_OBUF_BUFG | ACL_MOSI0_out |                     |                1 |              2 |
+| ~ACL_SCLK_OBUF_BUFG | xt[0]_i_1_n_0 |                     |                1 |              2 |
+| ~ACL_SCLK_OBUF_BUFG | xt[1]_i_1_n_0 |                     |                1 |              2 |
+| ~ACL_SCLK_OBUF_BUFG | xt[2]_i_1_n_0 |                     |                1 |              2 |
+| ~ACL_SCLK_OBUF_BUFG | xt[3]_i_1_n_0 |                     |                1 |              2 |
+| ~ACL_SCLK_OBUF_BUFG | xt[4]_i_1_n_0 |                     |                1 |              2 |
+| ~ACL_SCLK_OBUF_BUFG | xt[7]_i_1_n_0 |                     |                1 |              2 |
+| ~ACL_SCLK_OBUF_BUFG | xt[6]_i_1_n_0 |                     |                1 |              2 |
+| ~ACL_SCLK_OBUF_BUFG | xt[5]_i_1_n_0 |                     |                1 |              2 |
+| ~ACL_SCLK_OBUF_BUFG | yt[5]_i_1_n_0 |                     |                1 |              2 |
+| ~ACL_SCLK_OBUF_BUFG | yt[3]_i_1_n_0 |                     |                1 |              2 |
+| ~ACL_SCLK_OBUF_BUFG | yt[4]_i_1_n_0 |                     |                1 |              2 |
+| ~ACL_SCLK_OBUF_BUFG | yt[0]_i_1_n_0 |                     |                1 |              2 |
+| ~ACL_SCLK_OBUF_BUFG | yt[2]_i_1_n_0 |                     |                1 |              2 |
+| ~ACL_SCLK_OBUF_BUFG | yt[6]_i_1_n_0 |                     |                1 |              2 |
+| ~ACL_SCLK_OBUF_BUFG | yt[1]_i_1_n_0 |                     |                1 |              2 |
+|  clk/inst/clk_out2  |               |                     |                1 |              2 |
+| ~ACL_SCLK_OBUF_BUFG | yt[7]_i_1_n_0 |                     |                2 |              4 |
+|  clk/inst/clk_out1  |               |                     |                1 |              4 |
+| ~ACL_SCLK_OBUF_BUFG |               |                     |                1 |              6 |
+|  clk/inst/clk_out1  |               | cnt1[31]_i_1_n_0    |                8 |             62 |
+|  clk/inst/clk_out2  |               | V_count             |                8 |             62 |
+| ~ACL_SCLK_OBUF_BUFG |               | cnt2                |                8 |             64 |
+|  clk/inst/clk_out2  | V_count       | V_count[31]_i_1_n_0 |                9 |             64 |
++---------------------+---------------+---------------------+------------------+----------------+
+
+

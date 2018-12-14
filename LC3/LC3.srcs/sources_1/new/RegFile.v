@@ -27,9 +27,10 @@ module RegFile(
     input [2:0] SR1_addr,
     input [2:0] SR2_addr,
     input [2:0] DR_addr,
-    input SR_read,
-    input DR_write,
+    input SR_read_enable,
+    input DR_write_enable,
     input rst,
+    input clk,
     output reg [2:0] nzp_out
     );
 
@@ -37,23 +38,25 @@ module RegFile(
 	reg [2:0] nzp;
 	integer i;
 
-	always @(posedge DR_write or posedge rst) begin
+	always @(posedge clk or posedge rst) begin
 		if (rst) begin
 			for(i=0;i<8;i=i+1) begin
 				Reg[i]<=0;
 				nzp<=0;
 			end
 		end
-		else begin
+		else if(DR_write_enable) begin
 			Reg[DR_addr]<=DR;
 			nzp<={DR>0,DR==0,DR<0};
 		end
 	end
 
-	always @(negedge SR_read) begin
-		SR1 <= Reg[SR1_addr];
-		SR2 <= Reg[SR2_addr];
-		nzp_out <= nzp;
+	always @(negedge clk) begin
+		if(SR_read_enable) begin
+			SR1 <= Reg[SR1_addr];
+			SR2 <= Reg[SR2_addr];
+			nzp_out <= nzp;
+		end
 	end
 
 endmodule

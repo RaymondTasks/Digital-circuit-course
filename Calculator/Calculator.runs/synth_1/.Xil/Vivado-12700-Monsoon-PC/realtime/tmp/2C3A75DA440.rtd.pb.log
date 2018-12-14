@@ -1,0 +1,217 @@
+xilinx rtfpga
+INFO: [Synth 8-5546] ROM "pushing" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "length" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "keyboard/breaking" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "keyboard/ready" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "keyboard/ready" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "keyboard/ascii" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "monitor/vga/V_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "monitor/font/RGB" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'keyboard/ascii_reg[7]' (FDCE_1) to 'keyboard/ascii_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\keyboard/ascii_reg[6] )
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[0]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[1]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[2]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[3]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[4]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[5]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[6]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[7]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[8]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[9]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[10]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[11]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[12]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[13]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[14]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[15]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[16]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[17]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[18]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[19]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[20]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[21]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[22]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[23]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[24]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[25]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[26]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[27]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[28]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[29]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[30]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[31]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[32]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[33]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[34]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[35]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[36]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[37]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[38]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[39]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[40]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[41]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[42]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[43]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[44]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[45]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[46]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[47]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[48]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[49]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[50]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[51]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[52]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[53]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[54]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[55]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[56]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[57]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[58]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[59]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[60]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[61]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[62]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[63]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[64]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[65]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[66]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[67]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[68]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[69]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[70]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[71]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[72]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[73]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[74]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[75]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[76]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[77]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[78]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[79]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[80]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[81]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[82]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[83]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[84]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[85]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[86]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[87]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[88]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[89]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[90]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[91]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[92]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[93]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[94]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[95]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[96]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[97]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Synth 8-3886] merging instance 'ctrl/to_push_reg[98]' (FDE) to 'ctrl/to_push_reg[257]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/\to_push_reg[257] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/kb_rst_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/pushing_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/stack_push_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ctrl/exec_rst_reg)
+WARNING: [Synth 8-3332] Sequential element (kb_rst_reg) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (inputting_reg) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (pushing_reg) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (stack_push_reg) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (to_push_reg[257]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (executing_reg) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (exec_rst_reg) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (length_reg[15]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (length_reg[14]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (length_reg[13]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (length_reg[12]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (length_reg[11]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (length_reg[10]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (length_reg[9]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (length_reg[8]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (length_reg[7]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (length_reg[6]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (length_reg[5]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (length_reg[4]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (length_reg[3]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (length_reg[2]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (length_reg[1]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (length_reg[0]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[255]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[254]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[253]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[252]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[251]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[250]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[249]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[248]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[247]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[246]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[245]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[244]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[243]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[242]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[241]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[240]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[239]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[238]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[237]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[236]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[235]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[234]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[233]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[232]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[231]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[230]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[229]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[228]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[227]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[226]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[225]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[224]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[223]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[222]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[221]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[220]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[219]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[218]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[217]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[216]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[215]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[214]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[213]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[212]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[211]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[210]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[209]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[208]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[207]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[206]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[205]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[204]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[203]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[202]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[201]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[200]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[199]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[198]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[197]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[196]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[195]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[194]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[193]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[192]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[191]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[190]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[189]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[188]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[187]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[186]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[185]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[184]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[183]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[182]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[181]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[180]) is unused and will be removed from module Controller.
+WARNING: [Synth 8-3332] Sequential element (edit_reg[179]) is unused and will be removed from module Controller.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.

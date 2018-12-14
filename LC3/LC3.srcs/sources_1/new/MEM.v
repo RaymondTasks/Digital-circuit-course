@@ -22,19 +22,11 @@
 
 module MEM(
 	input MEM_read,
-	input MEM_write,
-	// input PC_write,
-	input [15:0] data_to_write_in,
-	input [15:0] MEM_addr,
-	input [15:0] DR_in,
-	// input [15:0] PC_in,
-
-	input [15:0] data_from_read,
-
-	// output [15:0] PC_out,
+	input [15:0] EX_result,
+	input [15:0] LD_data,
 	output [15:0] DR_out
     );
 
-	assign DR_out = MEM_read ? data_from_read : DR_in;
+	assign DR_out = MEM_read ? LD_data : EX_result;
 	
 endmodule

@@ -23,15 +23,17 @@ module top(
 
     );
 	//todo
-	ALU a();
+	// ALU a();
 	RegFile r();
-	IF_ID if_id();
-	ID_EX id_ex();
-	EX_MEM ex_mem();
-	MEM_WB mem_wb();
+	// IF_ID if_id();
+	// ID_EX id_ex();
+	// EX_MEM ex_mem();
+	// MEM_WB mem_wb();
+	IF If();
 	ID id();
 	EX ex();
-	MEM MEM();
+	MEM mem();
 	WB wb();
 	Block_Memory m();
+	Memory_Interface mi();
 endmodule

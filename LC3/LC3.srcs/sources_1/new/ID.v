@@ -26,29 +26,44 @@
 module ID(
     input [15:0] inst,
 
+    //和RegFile交互，用于获取SR1和SR2
     output [2:0] SR1_addr,
     output [2:0] SR2_addr,
     output SR1_read,
     output SR2_read,
+    output nzp_read,
+    // input [15:0] SR1_in,
+    // input [15:0] SR2_in,
+    // input [2:0] nzp_in,
 
-    output [2:0] DR_addr,
-    output reg [15:0] imm,
-    output [2:0] nzp,
+    //用于EX阶段的数据
+    // output [15:0] SR1_out,
+    // output [15:0] SR2_out,
+    output [3:0] op,
     output left_or_right,
     output logical_or_arithmetical,
+    output reg [15:0] imm,
+    output [2:0] nzp_inst,
+    // output [2:0] nzp_now,
+    output ALU_A_Sel,
+    output ALU_B_sel,
+    output ALU_S_sel,
 
+    //用于MEM阶段的数据
+    output MEM_read,
+    output MEM_write,
+
+    //用于WB阶段的数据
+    output [2:0] DR_addr,
+    output DR_write,
+
+    //需特殊对待的跳转类指令
     output BR,
     output JMP,
     output JSR,
     output JSRR,
-    output TRAP,
+    output TRAP 	//FUCK TRAP
 
-    output ALU_A_Sel,
-    output ALU_B_sel,
-    output ALU_S_sel,
-    output MEM_read,
-    output MEM_write,
-    output WB_enable
     );
 
 	parameter _ADD = 'b0001;
@@ -71,7 +86,6 @@ module ID(
 	parameter _TRAP= 'b1111;
 
 	//指令解析开始
-	wire [3:0] op;
 	assign op = inst[15:12];
 
     wire ADD;
@@ -108,27 +122,26 @@ module ID(
 	//指令解析结束
 
 	//行为解析开始
-	assign ALU_A_Sel = |{ADD,SUB,AND,OR,XOR,SH,JMP,JSRR,LDR,STR};	//等于1时选择SR1，0时选择PC
-	assign ALU_B_sel = |{ADD,SUB,AND,OR,XOR,SH} & !inst[5];			//等于1时选择SR2，0时选择imm
-	assign ALU_S_sel = |{ADD,SUB,AND,OR,XOR,SH,LD,LDR,LEA,ST,STR,TRAP};	//1时EX的计算结果传到下一级，0时为更新PC
+	wire calc;
+	assign calc = |{ADD,SUB,AND,OR,XOR,SH};  //算术逻辑运算
+
+	assign ALU_A_Sel = |{calc,JMP,JSRR,LDR,STR};	//等于1时选择SR1，0时选择PC
+	assign ALU_B_sel = calc & !inst[5];			//等于1时选择SR2，0时选择imm
+	assign ALU_S_sel = |{calc,LD,LDR,LEA,ST,STR,TRAP};	//1时EX的计算结果传到下一级MEM，0时为更新PC
 	assign MEM_read  = |{LD,LDR,TRAP};  //等于1时代表需要读取内存，等于0时代表不需要
-	assign MEM_write = |{ST,STR};	//等于1时代表需要写入，等于0时不需要
-	assign WB_enable = |{ADD,SUB,AND,OR,XOR,SH,LD,LDR,LEA};  //等于1时代表需要写回，等于0时不需要
+	assign MEM_write = |{ST,STR};	//等于1时代表需要写入内存，等于0时不需要
+	assign WB_enable = |{calc,JSR,JSRR,TRAP,LD,LDR,LEA};  //等于1时代表需要写回，等于0时不需要
+
+	assign nzp_inst = inst[11:9];
 
 	assign DR_addr  = |{JSR,JSRR,TRAP} ? 7 : inst[11:9];
-	assign SR1_addr = inst[8:6];
-	assign SR2_addr = (op==_ST||op==_STR) ? inst[11:9]:inst[2:0];
 
 	assign left_or_right = inst[4];
 	assign logical_or_arithmetical = inst[3];
-
-	assign SR1_read = ALU_A_Sel;
-	assign SR2_read = ALU_B_sel;
 	//行为解析结束
 
 	//计算立即数开始
 	wire [15:0] simm5,simm6,simm9,simm11,zimm8,zimm3;
-
 	assign simm5 = { {11{inst[ 4]}}, inst[ 4:0]};
 	assign simm6 = { {10{inst[ 5]}}, inst[ 5:0]};
 	assign simm9 = { { 7{inst[ 8]}}, inst[ 8:0]};
@@ -146,7 +159,7 @@ module ID(
 			_SH:	imm=zimm3;
 			_BR:	imm=simm9;
 			_JMP:	imm=simm6;
-			_JSR: 	imm=inst[11]==1 ? simm11:simm6;
+			_JSR: 	imm= JSR ? simm11 : simm6;
 			_LD:	imm=simm9;
 			_LDR:	imm=simm6;
 			_LEA:	imm=simm9;
@@ -158,6 +171,16 @@ module ID(
 	end
 	//立即数计算结束
 
+	//寄存器访问开始
+	assign SR1_addr = inst[8:6];
+	assign SR2_addr = |{ST,STR} ? inst[11:9] : inst[2:0];
+	assign SR1_read = ALU_A_Sel;
+	assign SR2_read = ALU_B_sel;
+	assign nzp_read = BR;
+	// assign SR1_out = SR1_in;
+	// assign SR2_out = SR2_in;
+	// assign nzp_now = nzp_in;
+	//寄存器访问结束
 
 endmodule
 
