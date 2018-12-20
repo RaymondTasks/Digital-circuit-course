@@ -60,14 +60,11 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param synth.incrementalSynthesisCache C:/Users/rayomnd/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-14064-Monsoon-PC/incrSyn
   set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a100tcsg324-1
   set_property design_mode GateLvl [current_fileset]
@@ -78,7 +75,7 @@ set rc [catch {
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
   add_files -quiet D:/Codes/Digital-circuit-course/Accelerometer/Accelerometer.runs/synth_1/top.dcp
-  read_ip -quiet d:/Codes/Digital-circuit-course/Accelerometer/Accelerometer.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+  read_ip -quiet D:/Codes/Digital-circuit-course/Accelerometer/Accelerometer.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
   read_xdc D:/Codes/Digital-circuit-course/Accelerometer/Accelerometer.srcs/constrs_1/imports/Desktop/Nexys4DDR_Master.xdc
   link_design -top top -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb

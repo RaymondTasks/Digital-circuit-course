@@ -90,7 +90,7 @@ module top(
 
 		if(~reading) begin
 			//读取的时间间隔
-			if(cnt2<30000) begin
+			if(cnt2<5000) begin
 				cnt2=cnt2+1;
 			end
 			else begin
@@ -259,7 +259,7 @@ module top(
 	// parameter VActive=480;
 	// parameter VFrontPorch=10;
 
-	reg [31:0] V_count,H_count;
+	reg [31:0] V_count,H_count;		//刷新信号的行数与列数
 
 	always @(posedge vgaclk) begin
 		if(H_count==HSync+HBackPorch+HActive+HFrontPorch-1) begin
@@ -276,7 +276,7 @@ module top(
 		end
 	end
 
-	wire [31:0] raw,col;
+	wire [31:0] raw,col;	//显示区域的行数与列数
 
 	assign col = H_count-HSync-HBackPorch;
 	assign raw = V_count-VSync-VBackPorch;

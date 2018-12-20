@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Fri Dec 14 18:41:57 2018
+| Date             : Thu Dec 20 23:27:28 2018
 | Host             : Monsoon-PC running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -33,7 +33,7 @@ Table of Contents
 | Total On-Chip Power (W)  | 0.237        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.140        |
+| Dynamic (W)              | 0.139        |
 | Device Static (W)        | 0.098        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 83.9         |
@@ -53,13 +53,13 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.001 |       10 |       --- |             --- |
-| Slice Logic    |     0.007 |     1636 |       --- |             --- |
-|   LUT as Logic |     0.005 |     1120 |     63400 |            1.77 |
+| Slice Logic    |     0.007 |     1638 |       --- |             --- |
+|   LUT as Logic |     0.005 |     1122 |     63400 |            1.77 |
 |   CARRY4       |     0.001 |      257 |     15850 |            1.62 |
 |   Register     |    <0.001 |      151 |    126800 |            0.12 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
 |   Others       |     0.000 |        6 |       --- |             --- |
-| Signals        |     0.010 |     2535 |       --- |             --- |
+| Signals        |     0.009 |     2536 |       --- |             --- |
 | MMCM           |     0.104 |        1 |         6 |           16.67 |
 | DSPs           |     0.018 |       33 |       240 |           13.75 |
 | I/O            |    <0.001 |       35 |       210 |           16.67 |
@@ -150,7 +150,7 @@ Table of Contents
 +----------+-----------+
 | Name     | Power (W) |
 +----------+-----------+
-| top      |     0.140 |
+| top      |     0.139 |
 |   clk    |     0.104 |
 |     inst |     0.104 |
 +----------+-----------+
