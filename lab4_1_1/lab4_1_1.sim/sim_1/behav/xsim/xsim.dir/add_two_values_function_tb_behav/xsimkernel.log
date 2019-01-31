@@ -1,7 +1,0 @@
-Running: xsim.dir/add_two_values_function_tb_behav/xsimk.exe -simmode gui -wdb add_two_values_function_tb_behav.wdb -simrunnum 0 -socket 7419
-Design successfully loaded
-Design Loading Memory Usage: 6456 KB (Peak: 6456 KB)
-Design Loading CPU Usage: 234 ms
-Simulation completed
-Simulation Memory Usage: 7080 KB (Peak: 7080 KB)
-Simulation CPU Usage: 249 ms

@@ -1,4 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/lab2_3_1/lab2_3_1.srcs/sim_1/new/FA.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fulladder_dataflow
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/lab2_3_1/lab2_3_1.srcs/sim_1/imports/Desktop/fulladder_dataflow_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fulladder_dataflow_tb

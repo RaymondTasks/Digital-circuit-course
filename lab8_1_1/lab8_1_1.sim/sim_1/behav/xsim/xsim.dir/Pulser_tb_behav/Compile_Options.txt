@@ -1,1 +1,0 @@
--wto "b6d554a041b64c8093189321ea435083" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "Pulser_tb_behav" "xil_defaultlib.Pulser_tb" "xil_defaultlib.glbl" -log "elaborate.log" 

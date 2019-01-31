@@ -1,4 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Codes/Digital-circuit-course/lab8_2_1/lab8_2_1.srcs/sources_1/new/bcd_counter.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module bcd_counter
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Codes/Digital-circuit-course/lab8_2_1/lab8_2_1.srcs/sim_1/new/bcd_counter_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module bcd_counter_tb
