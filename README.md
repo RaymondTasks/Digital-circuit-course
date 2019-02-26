@@ -1,1 +1,1 @@
-# Labs of Digital Circuit Course
+# Code of Digital Circuit Experiment Course
